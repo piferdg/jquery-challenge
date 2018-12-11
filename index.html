@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Placewise jQuery Challenge</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"
+    ></script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function() {
+        $("#show-a").click(function() {
+          $("#letter-b, #letter-c").hide();
+        });
+        $("#show-a").click(function() {
+          $("#letter-a").show();
+        });
+      });
+
+      $(document).ready(function() {
+        $("#show-b").click(function() {
+          $("#letter-a, #letter-c").hide();
+        });
+        $("#show-b").click(function() {
+          $("#letter-b").show();
+        });
+      });
+
+      $(document).ready(function() {
+        $("#show-c").click(function() {
+          $("#letter-a, #letter-b").hide();
+        });
+        $("#show-c").click(function() {
+          $("#letter-c").show();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="show-a"><button>Show A</button></div>
+    <div id="show-b"><button>Show B</button></div>
+    <div id="show-c"><button>Show C</button></div>
+
+    <hr />
+
+    <div id="letter-a">
+      <h3>A</h3>
+      <h3>A</h3>
+    </div>
+    <div id="letter-b">
+      <h3>B</h3>
+      <h3>B</h3>
+      <h3>B</h3>
+      <h3>B</h3>
+    </div>
+    <div id="letter-c"><h3>C</h3></div>
+  </body>
+</html>
